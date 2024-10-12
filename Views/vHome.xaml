@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kvargasT2.Views.vHome"
+             Title="vHome">
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+        <Label 
+            Text="SISTEMA DE CALIFICACIONES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label x:Name="lblAlerta"
+               TextColor="Red"
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="False"/>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Fecha"
+           FontSize="16"
+           Grid.Row="0" 
+           Grid.Column="0"></Label>
+
+            <DatePicker x:Name="dpFecha" 
+                   Date="11/10/2024"
+                   Grid.Row="0" 
+                   Grid.Column="1"></DatePicker>
+
+            <Label Text="Estudiante"
+           FontSize="16"
+           Grid.Row="1" 
+           Grid.Column="0"></Label>
+
+            <Picker x:Name="pkEstudiantes" 
+                    Grid.Row="1" 
+                    Grid.Column="1">
+                <Picker.Items>
+                    <x:String>Jonathan Díaz</x:String>
+                    <x:String>Glenda Jimenez</x:String>
+                    <x:String>Kevin Vargas</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="N Seguimiento 1"
+           FontSize="16"
+           Grid.Row="2" 
+           Grid.Column="0"></Label>
+            
+            <Entry x:Name="txtNSeguimiento1"
+           Placeholder="Ingrese N Seguimiento 1"
+                   Keyboard="Numeric"
+           Grid.Row="2"
+           Grid.Column="1"/>
+
+            <Label Text="N Examen 1"
+           FontSize="16"
+           Grid.Row="3" 
+           Grid.Column="0"></Label>
+
+            <Entry x:Name="txtNExamen1"
+           Placeholder="Ingrese N Examen 1"
+                   Keyboard="Numeric"
+           Grid.Row="3"
+           Grid.Column="1"/>
+
+            <Label Text="PARCIAL 1"
+           FontSize="16"
+           Grid.Row="4" 
+           Grid.Column="0"></Label>
+
+            <Label x:Name="lblParcial1" 
+                   FontSize="16"
+                   Grid.Row="4" 
+                   Grid.Column="1"></Label>
+
+            <Label Grid.Row="5" 
+                   Grid.Column="0"></Label>
+
+            <Label Grid.Row="5" 
+                   Grid.Column="1"></Label>
+
+            <Label Text="N Seguimiento 2"
+           FontSize="16"
+           Grid.Row="6" 
+           Grid.Column="0"></Label>
+
+            <Entry x:Name="txtNSeguimiento2"
+           Placeholder="Ingrese N Seguimiento 2"
+                   Keyboard="Numeric"
+           Grid.Row="6"
+           Grid.Column="1"/>
+
+            <Label Text="N Examen 2"
+           FontSize="16"
+           Grid.Row="7" 
+           Grid.Column="0"></Label>
+
+            <Entry x:Name="txtNExamen2"
+           Placeholder="Ingrese N Examen 2"
+                   Keyboard="Numeric"
+           Grid.Row="7"
+           Grid.Column="1"/>
+
+            <Label Text="PARCIAL 2"
+           FontSize="16"
+           Grid.Row="8" 
+           Grid.Column="0"></Label>
+
+            <Label x:Name="lblParcial2" 
+                   FontSize="16"
+                   Grid.Row="8" 
+                   Grid.Column="1"></Label>
+
+            <Label Grid.Row="9" 
+                   Grid.Column="0"></Label>
+
+            <Label Grid.Row="9" 
+                   Grid.Column="1"></Label>
+
+            <Label Text="NOTA FINAL"
+           FontSize="16"
+           Grid.Row="10" 
+           Grid.Column="0"></Label>
+
+            <Label x:Name="lblNotaFinal" 
+                   FontSize="16" 
+                   Grid.Row="10" 
+                   Grid.Column="1"></Label>
+        </Grid>
+
+        <Button x:Name="btnCalNot" Text="Calcular Notas" Clicked="btnCalNot_Clicked"/>
+        <Button x:Name="btnBorInf" Text="Borrar Información" Clicked="btnBorInf_Clicked" BackgroundColor="Red"/>
+    </VerticalStackLayout>
+</ContentPage>
