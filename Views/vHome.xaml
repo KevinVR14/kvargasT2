@@ -56,8 +56,10 @@
                     Grid.Row="1" 
                     Grid.Column="1">
                 <Picker.Items>
+                    <x:String>Tatiana Casa</x:String>
                     <x:String>Jonathan Díaz</x:String>
                     <x:String>Glenda Jimenez</x:String>
+                    <x:String>Marco Reyes</x:String>
                     <x:String>Kevin Vargas</x:String>
                 </Picker.Items>
             </Picker>
