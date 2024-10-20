@@ -9,6 +9,12 @@ public partial class vHome : ContentPage
 		InitializeComponent();
 	}
 
+    public vHome(string username)
+    {
+        InitializeComponent();
+        DisplayAlert("Mensaje", "Bienvenido "+username, "Cerrar");
+    }
+
     private void btnCalNot_Clicked(object sender, EventArgs e)
     {
         bool continuar = true;

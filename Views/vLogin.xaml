@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kvargasT2.Views.vLogin">
+    <VerticalStackLayout Spacing="20"
+                         Padding="20">
+        <Label 
+            Text="Inicio de Sesión"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image Source="https://revista.uisrael.edu.ec/images/uisrael.png"
+               WidthRequest="250"></Image>
+
+        <Entry x:Name="txtUsuario"
+               Placeholder="Ingrese el usuario"
+               MaxLength="25"></Entry>
+
+        <Entry x:Name="txtPassword"
+               Placeholder="Ingrese la contraseña"
+               IsPassword="True"/>
+
+        <Button x:Name="btnIniciar"
+                    Text="Iniciar Sesión"
+                    Clicked="btnIniciar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
